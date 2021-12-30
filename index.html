@@ -6,10 +6,21 @@
         <title>Thunderbite Challenge</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="app.css">
+        
     </head>
-    <body>
+    <body onload="fillCanvas()">
+        <canvas id="canvas">
+        </canvas>
+
+        <div id="wheel-container">
+            <img id="wheel-marker" src="images/wheel/marker.png" />
+            <img id="wheel" src="images/wheel/wheel.png" />
+            <input id="wheel-btn" type="image" src="images/wheel/btn-spin.png" onclick="spin()"></input>
+        </div>
+            
         <script src="./node_modules/pixi.js/dist/browser/pixi.min.js"></script>
-        <script src="./app.js"></script>
+        <script type="text/javascript" src="./canvas.js"></script>
+        <script type="text/javascript" src="./spin.js"></script>   
     </body>
 </html>

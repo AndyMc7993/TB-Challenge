@@ -1,0 +1,41 @@
+body{
+    background-image: url('./images/showdown/header1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100%;
+    min-height: 100vh;
+    margin:0;
+  }
+
+#canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 3em auto 0;
+  display: block;
+  width: 100vw;
+  height: 40vh;
+}
+
+#wheel-container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#wheel-marker{
+  width: 5vh;
+}
+
+#wheel{
+  width: 35vh;
+  transition: all ease 4s;
+}
+
+#wheel-btn{
+  width: 25vh;
+  margin-top: 1em;
+}
