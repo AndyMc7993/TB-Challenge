@@ -8,13 +8,37 @@ body{
     margin:0;
   }
 
-#canvas {
-  padding-left: 0;
-  padding-right: 0;
-  margin: 3em auto 0;
-  display: block;
-  width: 100vw;
-  height: 40vh;
+#canvas-cont{
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  padding: 0;
+  margin: 0;
+}
+
+#canvas-cont * {
+  position:absolute; 
+  top:3em; 
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#canvas-2 {
+  z-index: 100;
+}
+
+#canvas-3 {
+  z-index: 50;
+}
+
+#canvas-4 {
+  z-index: 60;
+}
+
+#canvas-5 {
+  z-index: 160;
 }
 
 #wheel-container{
@@ -38,4 +62,10 @@ body{
 #wheel-btn{
   width: 25vh;
   margin-top: 1em;
+}
+
+@media (min-width:500px ) {
+  #canvas-cont * {
+    transform: scale(1.3);
+  }
 }
